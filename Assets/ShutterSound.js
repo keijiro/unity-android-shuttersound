@@ -29,7 +29,6 @@ static function PlayShutterSound() {
 	mediaPlayer.Call("setDataSource", "file:///system/media/audio/ui/camera_click.ogg");
 
 	// mediaPlayer.setAudioStreamType(audioManager.STREAM_SYSTEM_ENFORCED);
-	var audioManagerClass = AndroidJavaClass("android.media.AudioManager");
 	mediaPlayer.Call("setAudioStreamType", streamType);
 
 	// mediaPlayer.prepare();
